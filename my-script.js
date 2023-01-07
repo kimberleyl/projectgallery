@@ -18,3 +18,12 @@ const myDate = new Date();
 const myDateFormatted = formatDate(myDate);
 
 console.log(myDateFormatted);
+
+
+/**
+ * Border
+ */
+
+function myFunction() {
+    document.getElementById("ContentBox").style.border = "solid #0000FF";
+  }
