@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(24, 22, 22);
+    min-height: 100vh; 
+    display: grid;
+    justify-content: center;
+    align-content: start;
+    padding-top: 4rem;
+  }
+  
+/* text configs */
+  h1 {
+    color: tomato;
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .class1 {
+    color: rgb(71, 89, 255);
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  p {
+    color: tomato;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  ol {
+    color: tomato;
+    font-family: sans-serif;
+    font-size: 10px;
+  }
+
+  img {
+    width: 300px;
+  }
+
+ 
+  /* classes */
+  .description {
+    background-color: tomato;
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  /* hyperlinks */
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  } 
+
+  
