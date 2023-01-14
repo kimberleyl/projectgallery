@@ -7,15 +7,105 @@ body {
     padding-top: 2rem;
   }
   
-/* text configs */
+/* Text Configs */
   h1 {
     color: rgb(243, 229, 229);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Space Mono', monospace;
     font-size: 100px;
     text-align: center;
-    line-height: 80%;
+    line-height: 120%;
   }
 
+  p {
+    color: rgb(255, 255, 255);
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    text-align: center;
+    line-height: 150%;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: justify;
+    display:block
+  }
+
+  .p2 {
+    color: rgb(255, 255, 255);
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .description {
+    background-color: tomato;
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  
+  /* Hyperlink Settings */
+  a:link {
+      color: rgb(255, 255, 255);
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+  a:visited {
+      color: rgb(255, 238, 0);
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+  a:hover {
+      color: rgb(126, 126,126);
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    
+  a:active {
+      color: rgb(126, 126, 126);
+      background-color: transparent;
+      text-decoration: underline;
+    } 
+
+  /* Project Gallery Flexbox */
+  .project-gallery {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    row-gap: 10px;
+    column-gap: 0.8em;
+  }
+
+  .project:hover {
+    transform: translateY(0px);
+  }
+
+  .hover_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    }
+
+  .projecthobby:hover .hover_img {
+    display: inline;
+  }
+  
+  .projectmonkey:hover .hover_img {
+    display: inline;
+  }
+
+  .projectabout:hover .hover_img {
+    display: inline;
+  }
+
+
+  /* London Virtual Tour */
   .building-gallery {
     width: 80%;
     margin: 100px auto 50px;
@@ -23,7 +113,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 18px;
     color: rgb(71, 89, 255);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Space Mono', monospace;
     font-size: 30px;
     text-align: center;
   }
@@ -35,68 +125,6 @@ body {
 
   .building-gallery img:hover{
     transform: scale(0.95);
-  }
-  
-  p {
-    color: rgb(255, 255, 255);
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
-    text-align: center;
-    line-height: 150%
-  }
-
-  .p2 {
-    color: rgb(255, 255, 255);
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
-    text-align: center;
-  }
-
- 
-  /* classes */
-  .description {
-    background-color: tomato;
-    color: white;
-    border: 2px solid black;
-    margin: 20px;
-    padding: 20px;
-  }
-
-  /* Project Gallery Flexbox */
-  .box {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    flex-wrap: wrap;
-    flex-flow: row wrap;
-    row-gap: 10px;
-    column-gap: 10em;
-  }
-
-  /* Hyperlinks */
-  a:link {
-    color: rgb(255, 255, 255);
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:visited {
-    color: rgb(238, 255, 3);
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: rgb(126, 126,126);
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  
-  a:active {
-    color: rgb(126, 126, 126);
-    background-color: transparent;
-    text-decoration: underline;
-  } 
+  }  
 
   
