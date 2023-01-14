@@ -1,29 +1,50 @@
+const timeElement = document.querySelector(".time");
+const dateElement = document.querySelector(".date");
+
 /**
- * @param {Date} dateObject
+ * @param {Date} date
  */
 
-function formatDate(dateObject) {
-    const parts = {
-        date: dateObject.getDate(),
-        month: dateObject.getMonth() +1,
-        year: dateObject.getFullYear(),
-        hour: (dateObject.getHours()%12)||12,
-        minute: dateObject.getMinutes().toString().padStart(2,"0"),
-        amOrPm: dateObject.getHours()<12?"AM":"PM"
-    };
-    return '${parts.date}/${parts.month}/${parts.year} ${parts.hour}:${parts.minute} ${parts.amOrPm}';
+function formatTime(date) {
+    const hours12 = date.getHours()%12||12;
+    const minutes = date.getMinutes();
+    const isAM = date.getHours() <12;
+
+    return `${hours12.toString().padStart(2,"0")}:${minutes.toString().padStart(2,"0")}${isAM? "AM":"PM"}`;
 }
 
-const myDate = new Date();
-const myDateFormatted = formatDate(myDate);
+function formatDate(date) {
+    const DAYS = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ];
+    const MONTHS = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ];
+  
+    date.getDay()
+    return `${DAYS[date.getDay()]}, ${MONTHS[date.getMonth()]} ${date.getFullYear()}`;
 
-console.log(myDateFormatted);
+}
 
-
-/**
- * Border
- */
-
-function myFunction() {
-    document.getElementById("ContentBox").style.border = "solid #0000FF";
-  }
+setInterval(() => {
+    const now = new Date();
+    timeElement.textContent = formatTime(now);
+    dateElement.textContent = formatDate(now);
+  }, 1000);
