@@ -4,15 +4,14 @@ body {
     display: grid;
     justify-content: center;
     align-content: start;
-    padding-top: 4rem;
-    border:white; border-width:50px;
+    padding-top: 2rem;
   }
   
 /* text configs */
   h1 {
     color: rgb(243, 229, 229);
     font-family: 'Times New Roman', Times, serif;
-    font-size: 150px;
+    font-size: 100px;
     text-align: center;
     line-height: 80%;
   }
@@ -41,9 +40,9 @@ body {
   p {
     color: rgb(255, 255, 255);
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
-    line-height: 180%
+    line-height: 150%
   }
 
   .p2 {
@@ -63,7 +62,19 @@ body {
     padding: 20px;
   }
 
-  /* hyperlinks */
+  /* Project Gallery Flexbox */
+  .box {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    row-gap: 10px;
+    column-gap: 10em;
+  }
+
+  /* Hyperlinks */
   a:link {
     color: rgb(255, 255, 255);
     background-color: transparent;
