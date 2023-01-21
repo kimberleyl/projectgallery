@@ -13,7 +13,7 @@ body {
     font-family: 'Space Mono', monospace;
     font-size: 100px;
     text-align: center;
-    line-height: 120%;
+    line-height: 50%;
   }
 
   p {
@@ -127,4 +127,9 @@ body {
     transform: scale(0.95);
   }  
 
-  
+  /* Media Queries */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 60px;
+    }
+  }
