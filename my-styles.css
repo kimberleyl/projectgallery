@@ -22,8 +22,8 @@ body {
     font-size: 14px;
     text-align: center;
     line-height: 150%;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 22%;
+    padding-right: 22%;
     text-align: justify;
     display:block
   }
@@ -33,6 +33,11 @@ body {
     font-family: 'Space Mono', monospace;
     font-size: 18px;
     text-align: center;
+    line-height: 150%;
+    padding-left: 22%;
+    padding-right: 22%;
+    text-align: justify;
+    display:block
   }
 
   .description {
@@ -130,6 +135,6 @@ body {
   /* Media Queries */
   @media (max-width: 480px) {
     h1 {
-      font-size: 10px;
+      font-size: 50px;
     }
   }
