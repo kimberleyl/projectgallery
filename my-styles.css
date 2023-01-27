@@ -95,8 +95,12 @@ body {
     color: rgb(255, 238, 0);
   }
 
-  .text.showmore.intromore{
+  .text.showmore .intromore{
     display: inline;
+  }
+
+  .text.showmore .dots{
+    display: none;
   }
 
   /* Date Element */
@@ -106,9 +110,14 @@ body {
     font-size: 14px;
     text-align: center;
     line-height: 150%;
-    padding-left: 30%;
-    padding-right: 30%;
-    display:block 
+    padding-right: 1%;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
   }
 
   /* Project Gallery Flexbox */
@@ -194,9 +203,8 @@ body {
     display:block 
    }
    
-   
    /* Media Queries */
-  @media (max-width: 480px) {
+  @media (max-width: 180px) {
     h1 {
       font-size: 50px;
     }

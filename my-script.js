@@ -49,14 +49,14 @@ setInterval(() => {
 
 /** Read more function */
 
-const readMore= document.querySelector('.readmorebutton');
-const intro = document.querySelectoor('.intro');
+const readMore= document.querySelector(".readmorebutton");
+const intro = document.querySelectoor(".intro");
 
-readMore.addEventListener('click',(e)=>{
-  intro.classList.toggle('showmore');
-  if(readmorebutton.innerText === 'Click to read more.'){
-    readmorebutton.innerText = 'Click to read less.';
-  }else(
-    readmorebutton.innerText = 'Click to read more.';
+readMore.addEventListener("click",(e)=>{
+  intro.classList.toggle("showmore");
+  if(readMore.innerText === "Welcome to my page, Click to read more."){
+    readMore.innerText = "Click to read less.";
+  }else{
+    readMore.innerText = "Welcome to my page, Click to read more.";
   }
 });
