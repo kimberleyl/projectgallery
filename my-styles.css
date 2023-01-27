@@ -20,32 +20,23 @@ body {
     color: rgb(255, 255, 255);
     font-family: 'Space Mono', monospace;
     font-size: 14px;
-    text-align: center;
+    text-align: left;
     line-height: 150%;
-    padding-left: 22%;
-    padding-right: 22%;
+    padding-left: 30%;
+    padding-right: 30%;
     text-align: justify;
     display:block
   }
 
-  .p2 {
+  hr {
+    display: block;
+    width:40%;
     color: rgb(255, 255, 255);
-    font-family: 'Space Mono', monospace;
-    font-size: 18px;
-    text-align: center;
-    line-height: 150%;
-    padding-left: 22%;
-    padding-right: 22%;
-    text-align: justify;
-    display:block
-  }
-
-  .description {
-    background-color: tomato;
-    color: white;
-    border: 2px solid black;
-    margin: 20px;
-    padding: 20px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 1px;
   }
 
   
@@ -74,16 +65,62 @@ body {
       text-decoration: underline;
     } 
 
+
+  /* Introduction Read More */
+  .intro {
+    color: rgb(255, 255, 255);
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    text-align: center;
+    line-height: 150%;
+    padding-left: 30%;
+    padding-right: 30%;
+    display:block 
+  }
+  
+  .intromore {
+    display: none;
+  }
+
+  .readmorebutton {
+    background-color: rgb(16, 16, 16);
+    border: 0px solid black;
+    color: rgb(255, 255, 255);
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .readmorebutton:hover {
+    color: rgb(255, 238, 0);
+  }
+
+  .text.showmore.intromore{
+    display: inline;
+  }
+
+  /* Date Element */
+  .datetime {
+    color: rgb(255, 255, 255);
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    text-align: center;
+    line-height: 150%;
+    padding-left: 30%;
+    padding-right: 30%;
+    display:block 
+  }
+
   /* Project Gallery Flexbox */
   .project-gallery {
     display:flex;
+    padding: 0px 250px 0px 250px;
     align-items: center;
-    justify-content: center;
-    height: 300px;
+    justify-content: space-around;
+    height: 250px;
     flex-wrap: wrap;
     flex-flow: row wrap;
-    row-gap: 10px;
-    column-gap: 0.8em;
+    gap: 10px;
   }
 
   .project:hover {
@@ -101,11 +138,23 @@ body {
     display: inline;
   }
   
-  .projectmonkey:hover .hover_img {
+  .projectmoviedata:hover .hover_img {
     display: inline;
   }
 
-  .projectabout:hover .hover_img {
+  .projecttictactoe:hover .hover_img {
+    display: inline;
+  }
+
+  .projectmonkey:hover .hover_img {
+    display: inline;
+  }
+  
+  .projectlearning:hover .hover_img {
+    display: inline;
+  }
+
+  .projectgithub:hover .hover_img {
     display: inline;
   }
 
@@ -132,7 +181,21 @@ body {
     transform: scale(0.95);
   }  
 
-  /* Media Queries */
+   /* Learning Log */
+   .codesnippet {
+    color:rgb(126, 126,126);
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    text-align: left;
+    text-align: justify;
+    line-height: 150%;
+    padding-left: 30%;
+    padding-right: 30%;
+    display:block 
+   }
+   
+   
+   /* Media Queries */
   @media (max-width: 480px) {
     h1 {
       font-size: 50px;

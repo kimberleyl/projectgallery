@@ -1,9 +1,7 @@
+/** Date */
+
 const timeElement = document.querySelector(".time");
 const dateElement = document.querySelector(".date");
-
-/**
- * @param {Date} date
- */
 
 function formatTime(date) {
     const hours12 = date.getHours()%12||12;
@@ -40,7 +38,6 @@ function formatDate(date) {
   
     date.getDay()
     return `${DAYS[date.getDay()]}, ${MONTHS[date.getMonth()]} ${date.getFullYear()}`;
-
 }
 
 setInterval(() => {
@@ -48,3 +45,18 @@ setInterval(() => {
     timeElement.textContent = formatTime(now);
     dateElement.textContent = formatDate(now);
   }, 1000);
+
+
+/** Read more function */
+
+const readMore= document.querySelector('.readmorebutton');
+const intro = document.querySelectoor('.intro');
+
+readMore.addEventListener('click',(e)=>{
+  intro.classList.toggle('showmore');
+  if(readmorebutton.innerText === 'Click to read more.'){
+    readmorebutton.innerText = 'Click to read less.';
+  }else(
+    readmorebutton.innerText = 'Click to read more.';
+  }
+});
